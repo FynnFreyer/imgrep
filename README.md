@@ -1,3 +1,6 @@
+[![Upload to PyPI](https://github.com/FynnFreyer/imgrep/actions/workflows/publish.yml/badge.svg)](https://github.com/FynnFreyer/imgrep/actions/workflows/publish.yml)
+![License](https://img.shields.io/pypi/l/imgrep)
+
 # IMGrep
 
 Want to find that one meme with the funny punchline?
