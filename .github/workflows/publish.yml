@@ -23,6 +23,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install build
+        echo ${{ secrets.PYPI_API_TOKEN }}
     - name: Build package
       run: python -m build
     - name: Publish package
