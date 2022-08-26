@@ -1,7 +1,7 @@
 import argparse
 import re
 
-from typing import List
+from typing import List, Union
 from pathlib import Path
 from multiprocessing import Pool
 from os import cpu_count
@@ -36,7 +36,7 @@ def parse_args(argv=None):
     return parser.parse_args() if argv is None else parser.parse_args(argv)
 
 
-def imgrep(image: str | Path, needle: re.Pattern) -> List[str]:
+def imgrep(image: Union[str, Path], needle: re.Pattern) -> List[str]:
     try:
         img = PIL.Image.open(image)
     except PIL.UnidentifiedImageError:
@@ -48,7 +48,7 @@ def imgrep(image: str | Path, needle: re.Pattern) -> List[str]:
     return [line for line in haystack.splitlines() if needle.search(line)]
 
 
-def recurse(directory: str | Path, needle: re.Pattern, filenames_only: bool = False) -> list[str]:
+def recurse(directory: Union[str, Path], needle: re.Pattern, filenames_only: bool = False) -> List[str]:
     output = []
 
     dir = Path(directory)
