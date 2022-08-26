@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "imgrep"
+version = "0.0.1"
+authors = [
+  { name="Fynn Freyer", email="fynn@fynns.site" },
+]
+description = "Grep for text in images"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "Pillow",
+    "pytesseract",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/FynnFreyer/imgrep"
+"Bug Tracker" = "https://github.com/FynnFreyer/imgrep/issues"
+
+[project.scripts]
+imgrep = "imgrep.main:main"
