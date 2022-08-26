@@ -1,5 +1,6 @@
-[![Upload to PyPI](https://github.com/FynnFreyer/imgrep/actions/workflows/publish.yml/badge.svg)](https://github.com/FynnFreyer/imgrep/actions/workflows/publish.yml)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/FynnFreyer/imgrep/PyPI)
 ![License](https://img.shields.io/pypi/l/imgrep)
+![PyPI](https://img.shields.io/pypi/v/imgrep)
 
 # IMGrep
 
