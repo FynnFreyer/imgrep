@@ -100,3 +100,6 @@ def main(argv=None):
         print(line, end='\0' if null else '\n')
 
     exit(0)
+
+if __name__ == '__main__':
+    main()
